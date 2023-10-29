@@ -31,7 +31,7 @@
     },
     {
       "matchDatasources": [ "github-tags" ],
-      "matchDepNames": [ "psf/black" ],
+      "matchDepNames": [ "black" ],
       "groupName": "black"
     }
   ]
