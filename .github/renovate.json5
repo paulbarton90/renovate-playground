@@ -45,7 +45,7 @@
     },
     {
       "matchDatasources": [ "pypi" ],
-      "matchDepNames": [ "flake8", "flake8-*" ],
+      "matchDepPatterns": [ "^flake8$", "^flake8-.*" ],
       "groupName": "flake8",
       "additionalBranchPrefix": "linter/",
       "commitMessageAction": "Bump",
