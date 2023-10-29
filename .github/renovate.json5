@@ -27,8 +27,9 @@
     {
       "matchDatasources": [ "pypi" ],
       "matchDepNames": [ "black" ],
-      "groupName": "black",
-      // "additionalBranchPrefix": "grouped/",
+      "groupName": "Black Linter",
+      "groupSlug": "black",
+      "additionalBranchPrefix": "linter/",
       "commitMessageAction": "Bump",
       "commitMessagePrefix": "⬆ 🐍",
       "commitBodyTable": true
@@ -37,8 +38,9 @@
       "matchManagers": [ "pre-commit" ],
       "matchDatasources": [ "github-tags" ],
       "matchDepNames": [ "psf/black" ],
-      "groupName": "black",
-      // "additionalBranchPrefix": "grouped/",
+      "groupName": "Black Linter",
+      "groupSlug": "black",
+      "additionalBranchPrefix": "linter/",
       "commitMessageAction": "Bump",
       "commitMessagePrefix": "⬆ 🐍",
       "commitBodyTable": true
