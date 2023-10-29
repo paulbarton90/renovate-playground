@@ -27,12 +27,14 @@
     {
       "matchDatasources": [ "pypi" ],
       "matchDepNames": [ "black" ],
-      "groupName": "black"
+      "groupName": "black",
+      "additionalBranchPrefix": "grouped/"
     },
     {
       "matchDatasources": [ "github-tags" ],
-      "matchDepNames": [ "black" ],
-      "groupName": "black"
+      "matchDepNames": [ "psf/black" ],
+      "groupName": "black",
+      "additionalBranchPrefix": "grouped/"
     }
   ]
 }
