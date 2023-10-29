@@ -21,7 +21,7 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "\\.pre-commit-config\\.yaml"
+        "poetry\\.lock"
       ],
       "matchStrings": [
         "name = \"(?<depName>[^'\" ]+)\"\nversion = \"(?<currentValue>[^'\" ,\\s]+)\""
