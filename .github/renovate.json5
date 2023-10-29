@@ -11,12 +11,6 @@
     ],
     "prBodyNotes": [""]
   },
-  "enabledManagers": [
-    "dockerfile",
-    "pip_requirements",
-    "poetry",
-    "pre-commit"
-  ],
   "ignorePaths": [
     ".devcontainer/*"
   ],
