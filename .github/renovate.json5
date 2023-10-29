@@ -79,6 +79,18 @@
       "commitMessageAction": "Bump",
       "commitMessagePrefix": "⬆ 🐍",
       "commitBodyTable": true
+    },
+    {
+      "matchManagers": [ "regex" ],
+      "matchDatasources": [ "pypi" ],
+      "commitMessagePrefix": "⬆ 🐍",
+      "commitBodyTable": true,
+      "commitMessageAction": "Bump",
+      "postUpgradeTasks": {
+        "commands": ["poetry lock --no-update"],
+        "fileFilters": ["poetry.lock"],
+        "executionMode": "branch"
+      }
     }
   ]
 }
