@@ -42,6 +42,25 @@
       "commitMessageAction": "Bump",
       "commitMessagePrefix": "⬆ 🐍",
       "commitBodyTable": true
+    },
+    {
+      "matchDatasources": [ "pypi" ],
+      "matchDepNames": [ "flake8", "flake8-*" ],
+      "groupName": "flake8",
+      "additionalBranchPrefix": "linter/",
+      "commitMessageAction": "Bump",
+      "commitMessagePrefix": "⬆ 🐍",
+      "commitBodyTable": true
+    },
+    {
+      "matchManagers": [ "pre-commit" ],
+      "matchDatasources": [ "github-tags" ],
+      "matchDepNames": [ "pycqa/flake8" ],
+      "groupName": "flake8",
+      "additionalBranchPrefix": "linter/",
+      "commitMessageAction": "Bump",
+      "commitMessagePrefix": "⬆ 🐍",
+      "commitBodyTable": true
     }
   ]
 }
