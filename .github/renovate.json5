@@ -24,6 +24,17 @@
         "\\.pre-commit-config\\.yaml"
       ],
       "matchStrings": [
+        "name = \"(?<depName>[^'\" ]+)\"\nversion = \"(?<currentValue>[^'\" ,\\s]+)\""
+      ],
+      "datasourceTemplate": "pypi",
+      "versioningTemplate": "pep440"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "\\.pre-commit-config\\.yaml"
+      ],
+      "matchStrings": [
         "(?<depName>[^'\" ]+)==(?<currentValue>[^'\" ,\\s]+)"
       ],
       "datasourceTemplate": "pypi",
