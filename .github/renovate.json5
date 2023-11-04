@@ -16,7 +16,7 @@
   ],
   "additionalBranchPrefix": "{{datasource}}/{{manager}}/",
   "commitMessageTopic": "{{depName}}",
-  "commitMessageExtra": "from {{#if isPinDigest}}{{{currentDigestShort}}}{{else}}{{#if isMajor}}v{{currentVersion}}{{else}}{{#if isSingleVersion}}v{{currentVersion}}{{else}}{{#if currentValue}}{{{currentValue}}}{{else}}{{{currentDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+  "commitMessageExtra": "from {{#if isPinDigest}}{{{currentDigestShort}}}{{else}}{{#if isMajor}}v{{currentVersion}}{{else}}{{#if isSingleVersion}}v{{currentVersion}}{{else}}{{#if currentValue}}{{{currentValue}}}{{else}}{{{currentDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewVersion}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "customManagers": [
     {
       "customType": "regex",
