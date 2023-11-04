@@ -44,12 +44,15 @@
   "packageRules": [
     {
       "matchDatasources": [ "pypi" ],
-      "matchDepNames": [ "black" ],
-      "groupName": "black",
-      "additionalBranchPrefix": "linter/",
       "commitMessageAction": "Bump",
       "commitMessagePrefix": "⬆ 🐍",
       "commitBodyTable": true
+    },
+    {
+      "matchDatasources": [ "pypi" ],
+      "matchDepNames": [ "black" ],
+      "groupName": "black",
+      "additionalBranchPrefix": "linter/"
     },
     {
       "matchManagers": [ "pre-commit" ],
@@ -65,10 +68,7 @@
       "matchDatasources": [ "pypi" ],
       "matchDepPatterns": [ "^flake8$", "^flake8-.*" ],
       "groupName": "flake8",
-      "additionalBranchPrefix": "linter/",
-      "commitMessageAction": "Bump",
-      "commitMessagePrefix": "⬆ 🐍",
-      "commitBodyTable": true
+      "additionalBranchPrefix": "linter/"
     },
     {
       "matchManagers": [ "pre-commit" ],
@@ -83,9 +83,6 @@
     {
       "matchManagers": [ "regex" ],
       "matchDatasources": [ "pypi" ],
-      "commitMessagePrefix": "⬆ 🐍",
-      "commitBodyTable": true,
-      "commitMessageAction": "Bump",
       "postUpgradeTasks": {
         "commands": ["poetry lock --no-update"],
         "fileFilters": ["poetry.lock"],
