@@ -92,6 +92,7 @@
     {
       "matchManagers": [ "github-actions" ],
       "commitMessageAction": "Bump",
+      "commitMessageExtra": "from {{#if isPinDigest}}{{{currentDigestShort}}}{{else}}{{#if isMajor}}{{currentVersion}}{{else}}{{#if isSingleVersion}}{{currentVersion}}{{else}}{{#if currentValue}}{{{currentValue}}}{{else}}{{{currentDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewVersion}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
       "commitMessagePrefix": "⬆ 💚",
       "commitBodyTable": true
     }
