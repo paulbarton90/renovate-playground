@@ -88,6 +88,12 @@
         "fileFilters": ["poetry.lock"],
         "executionMode": "branch"
       }
+    },
+    {
+      "matchManagers": [ "github-actions" ],
+      "commitMessageAction": "Bump",
+      "commitMessagePrefix": "⬆ 💚",
+      "commitBodyTable": true
     }
   ]
 }
